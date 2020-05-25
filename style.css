@@ -574,6 +574,9 @@ article {
     transition: background 0.1s ease;
     -webkit-transition: background 0.1s ease;
 }
+.skils > .label:last-child {
+    float: none;
+}
 /* Job */
 .job {
     margin-bottom: 0.25rem;
