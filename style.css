@@ -42,11 +42,6 @@ h4:last-child,
 h5:last-child {
     margin-bottom: 0;
 }
-h1,
-h2,
-h3 {
-    text-transform: uppercase;
-}
 h1 {
     font-weight: 900;
     font-size: 1.5rem;
@@ -66,6 +61,7 @@ h3 {
     font-weight: 700;
     font-size: 1.25rem;
     letter-spacing: 0.15em;
+    margin-bottom: 10px;
 }
 h4 {
     font-size: 1.125rem;
@@ -348,8 +344,7 @@ article {
 /* Columns */
 /* Vertical padding when no rows */
 .grid > .column:not(.row) {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 0 1rem;
 }
 .grid > .row > .column {
     margin-top: 0;
@@ -479,7 +474,7 @@ article {
     .stackable.grid > .column:not(.row),
     .grid > .stackable.row > .column {
         width: 100% !important;
-        padding: 1em !important;
+        padding: 0 1em !important;
     }
 }
 
@@ -540,7 +535,6 @@ article {
     color: rgba(0, 0, 0, 0.6);
     cursor: pointer;
     display: block;
-    float: left;
     font-size: 0.78571429rem;
     font-weight: 600;
     line-height: 1;
@@ -557,7 +551,8 @@ article {
     margin-right: 0.5em;
 }
 .skils {
-    min-height: 80px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .skils > .label {
     background-color: #e8e8e8;
@@ -574,9 +569,6 @@ article {
     transition: background 0.1s ease;
     -webkit-transition: background 0.1s ease;
 }
-.skils > .label:last-child {
-    float: none;
-}
 /* Job */
 .job {
     margin-bottom: 0.25rem;
@@ -585,10 +577,10 @@ article {
 /* Contacts */
 .contacts {
     list-style: none outside none;
-    display: flex;
+
     flex-wrap: wrap;
     padding: 0;
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 0;
     white-space: nowrap;
     font-size: 0.9em;
@@ -605,30 +597,11 @@ article {
     color: black;
     transition: color 0.2s ease-in-out;
 }
-.contacts li a.facebook:hover {
-    color: #3b5998;
-}
-.contacts li a.github:hover {
+
+.contacts li a:hover {
     color: dimgrey;
 }
-.contacts li a.mail:hover {
-    color: dimgrey;
-}
-.contacts li a.skype:hover {
-    color: #00aff0;
-}
-.contacts li a.linkedin:hover {
-    color: #0077b5;
-}
-.contacts li a.telegram:hover {
-    color: #0088cc;
-}
-.contacts li a.phone:hover {
-    color: dimgrey;
-}
-.contacts li a.website {
-    display: none;
-}
+
 .contacts li a .icon {
     fill: currentColor;
     height: 1.1428rem;
@@ -709,7 +682,8 @@ details > div:after {
     cursor: pointer;
 }
 .details > input:checked ~ div {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
 }
 .details > div {
     display: none;
