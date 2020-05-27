@@ -227,19 +227,19 @@ article {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     article {
         width: 723px;
-    margin:10px;
+    margin:10px auto;
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     article {
         width: 933px;
-    margin:10px;
+ margin:10px auto;
     }
 }
 @media only screen and (min-width: 1200px) {
     article {
         width: 1127px;
-        margin:10px;
+     margin:10px auto;
     }
 }
 
